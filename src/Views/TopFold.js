@@ -1,9 +1,9 @@
 import React from 'react';
-import './Header.css';
+import './TopFold.css';
 import Kevin from '../assets/images/Kevin.png';
 import Biglogo from '../assets/images/logo512.png';
 
-const Header = () => {
+const TopFold = () => {
   return (
     <div className="header-container">
       <header className="header">
@@ -38,4 +38,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default TopFold;
