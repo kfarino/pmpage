@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap");
+
+.header-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.98);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 48px;
+  height: auto;
+}
+
+.header {
+  padding: 8rem 2rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.header-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.value-prop {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  font-family: "Inter", sans-serif;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+}
+
+.header-image {
+  flex: 1;
+  position: relative;
+  max-width: 600px;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.image-backdrop {
+  position: absolute;
+  top: 2rem;
+  right: -2rem;
+  bottom: -2rem;
+  left: 2rem;
+  background-color: #f0f7ff;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .value-prop {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .header {
+    padding-top: 6rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .image-backdrop {
+    right: -1rem;
+    left: 1rem;
+  }
+}
+
